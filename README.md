@@ -1,3 +1,90 @@
+Marsia Mustafa 
+
+Phase II: User Requirements and Application Specifications 
+
+1. Chosen Development Model: 
+
+For this project, I have chosen to develop my product using the Agile model. The reason behind this is the fact that the business I am working with is a new one in its field. This makes their current requirements not clear and stable. For the moment they are only looking for a website showing an overall view of the clinic’s services. Their involvement is highly needed since they provide new system requirements regularly.  This involves keeping track of what they want to be done, changed or added.  
+
+2. User requirements: 
+
+The stakeholders of this project are the two owners of the clinic. Their requirements as users are: 
+
+The website should present all services provided by the clinic, a general information plus a photo-gallery of the work environment 
+
+A new costumer should have a form where he can type his personal data and this data can be gathered in a database so the staff can call them later 
+
+A sign-in form for clients to complete and for them to send a form with questions needed before they start their therapy 
+
+
+3. Functional requirements: 
+
+The end-users will be able to create accounts after they register as patients 
+
+The website will provide detailed information about the physiotherapy services offered, including types of treatments, specialties, and pricing 
+
+Provide a clear contact information section, including phone numbers, email addresses, and a contact form 
+
+Save the data gathered by the patients into respectively databases 
+
+ 
+
+4. Non-functional requirements: 
+
+User’s login password will be encrypted during storage in the database 
+
+The website should be easy to navigate, with intuitive menus and clear calls to action 
+
+The website should be compatible with popular web browsers 
+
+ 
+
+5. Application Specifications: 
+
+I am thinking of creating 4-5 interior pages for my website as described below: 
+
+Home: General information about the history of the clinic, their opening time and some photos form the work environment 
+
+Services: A page which will show all the services provided by the clinic and their respective prices 
+
+Sign-up: A patient must sign up and complete a form which contains question so that the staff finds the best treatment for them 
+
+Contact-us: This page will contain a form for users that need a more detailed information about the overall clinic 
+
+ 
+
+Database model: 
+
+I will be using two databases in my website to save two different types of data: 
+
+Data from clients which want a more detailed information about the clinic 
+
+Data gathered from sign up form for clients who are ready for an appointment 
+
+This data will be saved into databases in PhpMyAdmin where each isn't correlated.  
+
+Security measures: 
+
+For the security requirements I have thought of implementing one or both of the below alternatives: 
+
+Strong password policies for the sign-up user form 
+
+Limited login attempts 
+
+Based on how I am going to develop this sign in/up form and what its usage will be, I will decide which alternative will I use.  
+
+Technologies used: 
+
+This website will be built by using these programing languages: 
+
+HTML and CSS for creating forms and styling the webpage (since these are two of the most used front-end languages with more designs available for dynamic webpages) 
+
+JavaScript for handling both frontend and backend 
+
+PHP for backend and database connection  
+
+*****************************************************************************************************************************************************************************
+
 ## Team Name: Marsia Mustafa
 
 ## Team Leader:
