@@ -1,3 +1,69 @@
+Phase III: Software Design and Modeling 
+
+Deadline: April 1st, 2024, 23:59 
+
+Marsia Mustafa 
+
+ 
+
+System Architecture 
+
+The contact us form 
+
+For more questions, every client can leave their phone number or email address so they can be reached by the clinic staff later. This data will be stored in the respective database in PhpMyAdmin. 
+
+Signup form 
+
+Here, the clients can create the new accounts they want to use for further services by the clinic. This data will be stored in the respective database in PhpMyAdmin. I have thought of developing a form organized into a table with questions to be completed by the clients online a can be sent to the clinic email. I am also working on developing an appointment schedule by using Google calendar as a tool. 
+
+The footer 
+
+Every page in my website will have a common footer which contains three extra links: 
+
+Leave us a google review: this link connects the patient with a google form review where they can type in their experience 
+
+You can find us here: this link gives the patients the possibility to connect with the location of the clinic in Google Maps 
+
+Take a closer look: by clicking this, the patients will be redirected to the clinic photos uploaded by the staff in Google 
+
+The footer will also contain the telephone number of the clinic also the email which clients can use to reach out the staff for any question 
+
+
+Component Diagram 
+
+Below a have created a component diagram for the signup form I want to include in my website: 
+
+THE USER INTERFACE --> THE WEB SERVER --> THE BACK-END LANGUAGE --> DATABASE 
+
+The user interface will be a sign-up form developed using html and CSS which will give the patient the possibility to enter their name, surname, email address and their password twice. 
+
+The web server will be the Apache HTTP Server that is part of the XAMPP program which handles the HTTP request and response. 
+
+The back-end language I am using to handle this submission of data is PHP language. 
+
+The data will be stored in PhpMyAdmin. 
+
+Database design 
+
+My website stores the patients’ data into two different databases.  
+
+The first one is the database which has 5 attributes: Name, Surname, Email, Phone and ‘Your Message’. All these fields are mandatory to be completed and will be saved into the Contact Us database in PhpMyAdmin. 
+
+The second database is the one that stores the data gathered from the Sign-up form. It includes these attributes: Name, Email, Password and repeated password. The email will be the primary key of the table and every time a new patient wants to sign up with a primarily used password, the website generates an error message. Also, the password will be saved as a string of characters by using the password hashing method to provide security for the patients. 
+
+ 
+
+Use case diagram 
+
+Fill in the sign-up form --> Fill in the question form for the patients --> Send the table form via email to the clinic 
+
+This use case diagram shows how the patients can reach the question form and send it so it can be further studied by the staff of the clinic. 
+
+I am currently working on the idea of how to make the appointment scheduling system by using google calendar as a tool. I am thinking of using also the CRUD operations to give the patients the possibility to choose and remove an appointment.  
+
+I am trying to make the website dynamic, so it is easy to navigate by implementing buttons and extra links that help patients reach out new pages.  
+**************************************************************************************************************************
+
 Marsia Mustafa 
 
 Phase II: User Requirements and Application Specifications 
