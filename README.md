@@ -1,3 +1,128 @@
+Phase IV: Software Testing 
+
+Marsia Mustafa 
+
+A website for ‘Physiotherapie Dinaj’ 
+
+
+For this phase, I have decided to analyze two of the main elements of my website that require user input: sign-up and log in form. 
+
+Below I have developed 2 test cases for the sign-up form on my website.  
+
+Test Case Description: How does the system react when a user uses the same email to sign-up 
+
+Test steps: 
+
+Navigate to the sign-up page 
+
+Fill in the required fields (Username, Email, Password, Repeat password) 
+
+Click Submit  
+
+Do the same thing all over and try to use the same email as in the first case 
+
+Expected results: 
+
+The user receives an error message: “Email already taken” 
+
+The user cannot further continue without using another email to sign-up 
+
+ ****image***** 
+
+Above is the condition from the ‘Process-Sign up’ file that states that if there is a duplicate entry in the database (1062 number), the user will receive an error message that stops him from accessing further components of the webpage. This condition checks whether the email entered already exists in the ‘Sign-up’ table in the respective database in PhpMyAdmin. 
+
+The aim of this testing is to make sure that the security of the user is accomplished and that no mistakes can be made while signing up. 
+
+
+ 
+
+Test Case Description: How does the system respond if the password does not fulfill the requirements 
+
+Test steps: 
+
+Navigate to the sign-up page 
+
+Fill in the required fields (Username, Email, Password, Repeat password) 
+
+In the email section, enter a password that is less than 8 characters, does not contain at least one letter and one number 
+
+Click Submit 
+
+Expected results: 
+
+The user receives error messages for each scenario of inputting a password. 
+
+ ****image*****
+
+In this code, there are stated three conditions where each is responsible for three possible scenarios while entering a password: less than 8 characters, no letter, no number. Even if only one of the above conditions is not fulfilled, the user cannot continue further with the sign-up process. 
+
+The aim of this testing is to make sure that the password entered is strong and secure. In this way, the user can feel much safer while navigation through the website. 
+
+
+
+
+Below I have developed a PHPUnit test for the php script named ‘process-signup.php’. I have focused on testing the validation rules and the database interaction. 
+
+The setUp method initializes the database connection before each test is applied. 
+
+The tearDown method closes the database connection after each test. 
+
+The testValidRegistration method tests a valid registration by providing valid input data and checks if the script redirects to the success page. 
+
+The testInvalidEmail method tests an invalid email input with no right syntax and checks if the error message contains "Valid email is required".  
+
+ ****image*****
+
+This testing script focuses on the invalid email entered scenario. 
+
+ 
+
+ 
+
+ 
+
+Below I have developed one test case for the ‘log in’ form on my website. 
+
+Test Case Description: How does the system react when a user tries to login in without signing up in advance 
+
+Test steps: 
+
+Navigate to the login page 
+
+Fill in the required fields (Email, Password) 
+
+Click Submit  
+
+Expected results: 
+
+The user cannot further continue without primarily signing up. 
+
+ ****image*****
+
+This PHP code script checks the availability of an email address in a database table called "user". If the email entered is not already part of the database table where the data from the sign-up form is stored, the user cannot log in. 
+
+The aim of this testing is to make sure that the system works chronologically. In other words, making sure that before logging in, the user must primarily create an account. 
+
+
+ 
+
+Below I have developed a PHPUnit test for the php script named ‘validate-email.php’. I have focused on testing the validation rules and the database interaction. 
+
+****image*****
+The setUp method initializes the database connection before each test. 
+
+The tearDown method closes the database connection after each test. 
+
+The testEmailAvailable method tests the case when the email is available in the database. 
+
+The testEmailNotAvailable method tests the case when the email is already taken in the database. 
+
+This testing script focuses on how the system reacts to a user trying to login in without signing up. 
+
+ 
+***********************************
+ 
+
 Phase III: Software Design and Modeling 
 
 Deadline: April 1st, 2024, 23:59 
